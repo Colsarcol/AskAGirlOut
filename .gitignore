@@ -1,12 +1,13 @@
-# Atari 2600 (Stella) support for multiple assemblers
-# - DASM
-# - CC65
+#Files to ignore
 
-# Assembled binaries and object directories
-obj/
-a.out
-*.bin
-*.a26
+#Umm lets not give my password away...
+auth.txt
 
-# Add in special Atari 7800-based binaries for good measure
-*.a78
+#System Info, this file should be auto created if not provided
+notifymessage.txt
+
+#Just my test file for Python basics
+test.py
+
+#Since Hydra runs Python 2.7 and we set the shell to Python 3.3, we get pyc files
+*.pyc
