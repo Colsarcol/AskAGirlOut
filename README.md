@@ -9,8 +9,9 @@ This program requires Python 3 or higher.
 (Note if you are using **Hydra at UTK**, make sure to run **python setshell.py** first, then run **python -V** to make sure you are on python 3.X.X)
 
 1. Update notifycontact.txt, with your email to receive notifications are the program is ran
-2. Then distribute to the person you want to ask out
-3. They will run the program with **python setup.py theirEmail@domain.com**
+2. Update auth.txt with your gmail email address you want the emails to come from, and the password for the account (gmail SMTP for sending emails is used)
+3. Then distribute to the person you want to ask out
+4. They will run the program with **python setup.py theirEmail@domain.com**
 
 ## Contact Me
 If you have any questions or issues feel free to contact me.
