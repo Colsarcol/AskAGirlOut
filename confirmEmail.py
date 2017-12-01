@@ -181,7 +181,7 @@ background-color: #f6f6f6;
     FROM = userGlob
     emails = []
     emails.append(noteEmails[0])
-	emails.append(emailCon)
+    emails.append(emailCon)
     lens = len(emails)
     count = 0
     for i in emails:
