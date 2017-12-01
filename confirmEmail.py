@@ -11,6 +11,13 @@ nameVar = "Hello" #Name of the person that will be emailed
 dateStr = "1/1/1970"
 emailCon = ""
 
+noteNames = []
+noteEmails = []
+with open("notifycontacts.txt", mode='r', encoding='utf-8') as contacts_file:
+	for a_contact in contacts_file:
+		noteNames.append(a_contact.split()[0])
+	noteEmails.append(a_contact.split()[1])
+
 with open('auth.txt') as f:
   credentials = [x.strip().split(':') for x in f.readlines()]
 
@@ -169,8 +176,8 @@ background-color: #f6f6f6;
 
     FROM = userGlob
     emails = []
-    emails.append(emailCon)
-    #TODO emails.append(NotifyMessage Area Add)    
+    emails.append(noteEmails[0])
+	emails.append(emailCon)
     lens = len(emails)
     count = 0
     for i in emails:
@@ -292,8 +299,7 @@ background-color: #f6f6f6;
 
     FROM = userGlob
     emails = []
-    emails.append(emailCon)
-    #TODO emails.append(NotifyMessage Area Add)    
+    emails.append(noteEmails[0])
     lens = len(emails)
     count = 0
     for i in emails:
@@ -416,8 +422,7 @@ background-color: #f6f6f6;
 
     FROM = userGlob
     emails = []
-    emails.append(emailCon)
-    #TODO emails.append(NotifyMessage Area Add)    
+    emails.append(noteEmails[0])
     lens = len(emails)
     count = 0
     for i in emails:
@@ -539,8 +544,7 @@ background-color: #f6f6f6;
 
     FROM = userGlob
     emails = []
-    #emails.append(emailCon)  TODO Dont want emails going to no, ians, or maybe. Use another txt file for hard code from sender who would get all the notify emails and these
-    emails.append(emailCon)
+    emails.append(noteEmails[0])
     lens = len(emails)
     count = 0
     for i in emails:
