@@ -1,7 +1,7 @@
-#How to Ask a Girl Out
+# How to Ask a Girl Out
 
 ----
-##History
+## History
 During your time in CS 360 with Dr. Huang at The University of Tennessee, he asks someone to come up to the whiteboard and write a program on how to ask a girl out. My original whiteboard implementation was in Python, the code was simple, exit(); well challenge accepted.
 
 ----
