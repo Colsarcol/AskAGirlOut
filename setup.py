@@ -40,7 +40,7 @@ def main():
 	total = len(sys.argv)
 	if total != 2:
 		print("Error need two command line arguments")
-		print("Usage: python setup.py [email address]")
+		print("Usage: python setup.py [your email address]")
 		exit()
 	
 	emailContact = str(sys.argv[1])
