@@ -28,7 +28,7 @@ def questionFun(emailContact):
 	else:	
 		confirmEmail.ians(emailContact)
 		os.system("clear")
-		print('not a valid answer')
+		print('Not a valid answer, please try again')
 		questionFun(emailContact)
 
 def main(emailContact):
